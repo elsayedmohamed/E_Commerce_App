@@ -1,5 +1,5 @@
-import 'package:e_commerce/utilites/router.dart';
-import 'package:e_commerce/utilites/routes.dart';
+import 'package:e_commerce/utilities/router.dart';
+import 'package:e_commerce/utilities/routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -32,6 +32,18 @@ class MyApp extends StatelessWidget {
             borderRadius: BorderRadius.circular(2),
             borderSide: const BorderSide(
               color: Colors.grey,
+            ),
+          ),
+          errorBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(2),
+            borderSide: const BorderSide(
+              color: Colors.red,
+            ),
+          ),
+          focusedErrorBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(2),
+            borderSide: const BorderSide(
+              color: Colors.red,
             ),
           ),
         ),
