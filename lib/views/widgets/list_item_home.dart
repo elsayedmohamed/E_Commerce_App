@@ -8,7 +8,7 @@ class ListItemHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DecoratedBox(
-      decoration: BoxDecoration(),
+      decoration: const BoxDecoration(),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -38,7 +38,7 @@ class ListItemHome extends StatelessWidget {
                       child: Align(
                         alignment: Alignment.center,
                         child: Text(
-                          '${product.dicscountValue}%',
+                          '${product.discountValue}%',
                           style: Theme.of(context).textTheme.caption!.copyWith(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
@@ -69,11 +69,24 @@ class ListItemHome extends StatelessWidget {
                   fontWeight: FontWeight.w600,
                 ),
           ),
-          Text(
-            '${product.price}\$',
-            style: Theme.of(context).textTheme.subtitle2!.copyWith(
-                  color: Colors.grey,
+          Text.rich(
+            TextSpan(
+              children: [
+                TextSpan(
+                  text: '${product.price}\$',
+                  style: Theme.of(context).textTheme.subtitle2!.copyWith(
+                        color: Colors.grey,
+                        decoration: TextDecoration.lineThrough,
+                      ),
                 ),
+                TextSpan(
+                  text: '${product.price * (product.discountValue) / 100}\$',
+                  style: Theme.of(context).textTheme.subtitle2!.copyWith(
+                        color: Colors.grey,
+                      ),
+                ),
+              ],
+            ),
           ),
         ],
       ),
