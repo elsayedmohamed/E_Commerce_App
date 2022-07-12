@@ -25,31 +25,31 @@ class _BottomNavbarState extends State<BottomNavbar> {
   List<PersistentBottomNavBarItem> _navBarsItems() {
     return [
       PersistentBottomNavBarItem(
-        icon: Icon(CupertinoIcons.home),
+        icon: const Icon(CupertinoIcons.home),
         title: ("Home"),
         activeColorPrimary: CupertinoColors.activeBlue,
         inactiveColorPrimary: CupertinoColors.systemGrey,
       ),
       PersistentBottomNavBarItem(
-        icon: Icon(CupertinoIcons.bag_fill),
+        icon: const Icon(CupertinoIcons.shopping_cart),
         title: ("Shop"),
         activeColorPrimary: CupertinoColors.activeBlue,
         inactiveColorPrimary: CupertinoColors.systemGrey,
       ),
       PersistentBottomNavBarItem(
-        icon: Icon(Icons.favorite),
-        title: ("favourites"),
+        icon: const Icon(Icons.shopping_bag),
+        title: ("Bag"),
         activeColorPrimary: CupertinoColors.activeBlue,
         inactiveColorPrimary: CupertinoColors.systemGrey,
       ),
       PersistentBottomNavBarItem(
-        icon: Icon(Icons.shopping_cart),
-        title: ("Cart"),
+        icon: const Icon(Icons.favorite_outline_rounded),
+        title: ("Favourite"),
         activeColorPrimary: CupertinoColors.activeBlue,
         inactiveColorPrimary: CupertinoColors.systemGrey,
       ),
       PersistentBottomNavBarItem(
-        icon: Icon(CupertinoIcons.profile_circled),
+        icon: const Icon(CupertinoIcons.profile_circled),
         title: ("Profile"),
         activeColorPrimary: CupertinoColors.activeBlue,
         inactiveColorPrimary: CupertinoColors.systemGrey,

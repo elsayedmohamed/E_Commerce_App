@@ -5,7 +5,7 @@ class Product {
   final String title;
   final int price;
   final String imgUrl;
-  final int? dicscountValue;
+  final int discountValue;
   final String? category;
   final double? rate;
 
@@ -14,7 +14,7 @@ class Product {
     required this.title,
     required this.price,
     required this.imgUrl,
-    this.dicscountValue,
+    this.discountValue = 0,
     this.category = 'Other',
     this.rate,
   });
@@ -27,7 +27,7 @@ List<Product> dummyProduct = [
     price: 300,
     imgUrl: AppAssets.tempProductAsset1,
     category: 'Clothes',
-    dicscountValue: 20,
+    discountValue: 20,
   ),
   Product(
     id: 1,
@@ -35,7 +35,7 @@ List<Product> dummyProduct = [
     price: 300,
     imgUrl: AppAssets.tempProductAsset1,
     category: 'Clothes',
-    dicscountValue: 20,
+    discountValue: 20,
   ),
   Product(
     id: 1,
@@ -43,7 +43,7 @@ List<Product> dummyProduct = [
     price: 300,
     imgUrl: AppAssets.tempProductAsset1,
     category: 'Clothes',
-    dicscountValue: 20,
+    discountValue: 20,
   ),
   Product(
     id: 1,
@@ -51,7 +51,7 @@ List<Product> dummyProduct = [
     price: 300,
     imgUrl: AppAssets.tempProductAsset1,
     category: 'Clothes',
-    dicscountValue: 20,
+    discountValue: 20,
   ),
   Product(
     id: 1,
@@ -59,6 +59,6 @@ List<Product> dummyProduct = [
     price: 300,
     imgUrl: AppAssets.tempProductAsset1,
     category: 'Clothes',
-    dicscountValue: 20,
+    discountValue: 20,
   ),
 ];
